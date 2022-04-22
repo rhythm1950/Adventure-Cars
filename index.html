@@ -5,103 +5,287 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Books</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
+  <!-- CSS stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap css -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <title>Adventure Cars</title>
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-          <i class="fas fa-book-reader fa-2x mx-3"></i>Books</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-align-right text-light"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mr-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">COURSE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRICE</a>
-            </li>
-            <li class="nav-item dropdown">
-              <div class="dropdown">
-                <a href="#" class="nav-link">PAGES</a>
-                <div class="dropdown-content">
-                  <a href="#">Generic</a>
-                  <a href="#">Element</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-          </ul>
+  <!-- Topbar -->
+  <div class="container-fluid">
+    <div class="row bg-secondary py-2 px-lg-5">
+
+      <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+        <div class="d-inline-flex align-items-center">
+          <a class="text-white pr-3" href="">FAQs</a>
+          <span class="text-white">|</span>
+          <a class="text-white px-3" href="">Help</a>
+          <span class="text-white">|</span>
+          <a class="text-white pl-3" href="">Support</a>
         </div>
-      </nav>
+      </div>
+
+      <div class="col-lg-6 text-center text-lg-right">
+        <div class="d-inline-flex align-items-center">
+          <a class="text-white px-3" href="">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="text-white px-3" href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="text-white px-3" href="">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="text-white px-3" href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="text-white pl-3" href="">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
     </div>
+
+    <div class="row py-3 px-lg-5">
+      <div class="col-lg-4">
+        <a href="" class="navbar-brand d-none d-lg-block">
+          <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Pet</span>Lover</h1>
+        </a>
+      </div>
+
+      <div class="col-lg-8 text-center text-lg-right">
+        <div class="d-inline-flex align-items-center">
+
+          <div class="d-inline-flex flex-column text-center pr-3 border-right">
+            <h6>Opening Hours</h6>
+            <p class="m-0">8.00AM - 9.00PM</p>
+          </div>
+
+          <div class="d-inline-flex flex-column text-center px-3 border-right">
+            <h6>Email Us</h6>
+            <p class="m-0">info@example.com</p>
+          </div>
+
+          <div class="d-inline-flex flex-column text-center pl-3">
+            <h6>Call Us</h6>
+            <p class="m-0">+012 345 6789</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+      <a href="" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First
+        </h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+        <div class="navbar-nav mr-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="service.html" class="nav-item nav-link">Service</a>
+          <a href="price.html" class="nav-item nav-link">Price</a>
+          <a href="booking.html" class="nav-item nav-link">Booking</a>
+
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+            <div class="dropdown-menu rounded-0 m-0">
+              <a href="blog.html" class="dropdown-item">Blog Grid</a>
+              <a href="single.html" class="dropdown-item">Blog Detail</a>
+            </div>
+          </div>
+
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+      </div>
+
+    </nav>
+  </div>
+
+  <header>
     <div class="container text-center">
       <div class="row">
+
         <div class="col-md-7 col-sm-12  text-white">
           <h6>AUTHOR: DAILY TUITION</h6>
           <h1>EXCITING ADVENTURE</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi
+            expedita.
           </p>
           <button class="btn btn-light px-5 py-2 primary-btn">
             By now for $5.99
           </button>
         </div>
+
         <div class="col-md-5 col-sm-12  h-25">
           <img src="images/header-img.png" alt="Book" />
         </div>
+
       </div>
     </div>
   </header>
+
   <main>
-    <section class="section-1">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="pray">
-              <img src="images/pexels-photo-1904769.jpeg" alt="Pray" class="" />
+    <!-- Booking section -->
+    <div class="container-fluid bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="bg-primary py-5 px-4 px-sm-5">
+              <form class="py-5">
+
+                <div class="form-group">
+                  <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                </div>
+
+                <div class="form-group">
+                  <div class="date" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control border-0 p-4 datetimepicker-input"
+                      placeholder="Reservation Date" data-target="#date" data-toggle="datetimepicker" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="time" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control border-0 p-4 datetimepicker-input"
+                      placeholder="Reservation Time" data-target="#time" data-toggle="datetimepicker" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <select class="custom-select border-0 px-4" style="height: 47px;">
+                    <option selected>Select A Service</option>
+                    <option value="1">Service 1</option>
+                    <option value="2">Service 1</option>
+                    <option value="3">Service 1</option>
+                  </select>
+                </div>
+                <div>
+
+                  <button class="btn btn-dark btn-block border-0 py-3" type="submit">Book Now</button>
+                </div>
+              </form>
+
             </div>
           </div>
-          <div class="col-md-6 col-12">
-            <div class="panel text-left">
-              <h1>Mr. Devid Smith</h1>
-              <p class="pt-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
-                voluptatum, id ex ratione omnis reiciendis possimus officiis.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
-                ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
-                expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
-              </p>
+
+          <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+            <h4 class="text-secondary mb-3">Going for a vacation?</h4>
+            <h1 class="display-4 mb-4">Book For <span class="text-primary">Your Pet</span></h1>
+            <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
+
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h1 class="flaticon-house font-weight-normal text-secondary m-0 mr-3"></h1>
+                    <h5 class="text-truncate m-0">Pet Boarding</h5>
+                  </div>
+                  <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h1 class="flaticon-food font-weight-normal text-secondary m-0 mr-3"></h1>
+                    <h5 class="text-truncate m-0">Pet Feeding</h5>
+                  </div>
+                  <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h1 class="flaticon-grooming font-weight-normal text-secondary m-0 mr-3"></h1>
+                    <h5 class="text-truncate m-0">Pet Grooming</h5>
+                  </div>
+                  <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h1 class="flaticon-toy font-weight-normal text-secondary m-0 mr-3"></h1>
+                    <h5 class="text-truncate m-0">Pet Tranning</h5>
+                  </div>
+                  <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- About section -->
+    <div class="container py-5">
+      <div class="row py-5">
+
+        <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+          <h4 class="text-secondary mb-3">About Us</h4>
+          <h1 class="display-4 mb-4"><span class="text-primary">Boarding</span> & <span
+              class="text-secondary">Daycare</span></h1>
+          <h5 class="text-muted mb-3">Amet stet amet ut. Sit no vero vero no dolor. Sed erat ut sea. Just clita ut stet
+            kasd at diam sit erat vero sit.</h5>
+          <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore
+            sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam
+            duo</p>
+
+          <ul class="list-inline">
+            <li>
+              <h5><i class="fa fa-check-double text-secondary mr-3"></i>Best In Industry</h5>
+            </li>
+            <li>
+              <h5><i class="fa fa-check-double text-secondary mr-3"></i>Emergency Services</h5>
+            </li>
+            <li>
+              <h5><i class="fa fa-check-double text-secondary mr-3"></i>24/7 Customer Support</h5>
+            </li>
+          </ul>
+
+          <a href="" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="row px-3">
+            <div class="col-12 p-0">
+              <img class="img-fluid w-100" src="./images/7.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- fun facts -->
     <section class="section-2 container-fluid p-0">
+
       <div class="cover">
         <div class="overlay"></div>
         <div class="content text-center">
@@ -111,6 +295,7 @@
           </p>
         </div>
       </div>
+
       <div class="container-fluid text-center">
         <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
           <div class="rect">
@@ -131,72 +316,371 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- Services section -->
+    <div class="container-fluid bg-light pt-5">
+      <div class="container py-5">
 
-      <div class="purchase text-center">
-        <h1>Purchase Whatever You Want</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <div class="cards">
-          <div class="d-flex flex-row justify-content-center flex-wrap">
-            <div class="card">
-              <div class="card-body">
-                <div class="title">
-                  <h5 class="card-title">PDF</h5>
-                </div>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in.
-                </p>
-                <div class="pricing">
-                  <h1>$77.99</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
-                </div>
+        <div class="row mb-2 section-heading">
+          <div class="col-12 text-center">
+            <h1>Our Projects</h1>
+            <p>We love to click lively pictures around the world</p>
+          </div>
+        </div>
+
+        <div class="row pb-3">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h3 class="flaticon-house display-3 font-weight-normal text-secondary mb-3"></h3>
+              <h3 class="mb-3">Pet Boarding</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h3 class="flaticon-food display-3 font-weight-normal text-secondary mb-3"></h3>
+              <h3 class="mb-3">Pet Feeding</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h3 class="flaticon-grooming display-3 font-weight-normal text-secondary mb-3"></h3>
+              <h3 class="mb-3">Pet Grooming</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h3 class="flaticon-cat display-3 font-weight-normal text-secondary mb-3"></h3>
+              <h3 class="mb-3">Per Training</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h3 class="flaticon-dog display-3 font-weight-normal text-secondary mb-3"></h3>
+              <h3 class="mb-3">Pet Exercise</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h3 class="flaticon-vaccine display-3 font-weight-normal text-secondary mb-3"></h3>
+              <h3 class="mb-3">Pet Treatment</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Features section -->
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-5">
+          <img class="img-fluid w-100" src="./images/5.jpg" alt="">
+        </div>
+
+        <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+          <h4 class="text-secondary mb-3">Why Choose Us?</h4>
+          <h1 class="display-4 mb-4"><span class="text-primary">Special Care</span> On Pets</h1>
+          <p class="mb-4">Dolor lorem lorem ipsum sit et ipsum. Sadip sea amet diam sed ut vero no sit. Et elitr stet
+            sed sit sed kasd. Erat duo eos et erat sed diam duo</p>
+
+          <div class="row py-2">
+
+            <div class="col-6">
+              <div class="d-flex align-items-center mb-4">
+                <h1 class="flaticon-cat font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h5 class="text-truncate m-0">Best In Industry</h5>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="title">
-                  <h5 class="card-title">E-book</h5>
-                </div>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in.
-                </p>
-                <div class="pricing">
-                  <h1>$99.99</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
-                </div>
+
+            <div class="col-6">
+              <div class="d-flex align-items-center mb-4">
+                <h1 class="flaticon-doctor font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h5 class="text-truncate m-0">Emergency Services</h5>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="title">
-                  <h5 class="card-title">Print Copy</h5>
-                </div>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in.
-                </p>
-                <div class="pricing">
-                  <h1>$58.99</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <h1 class="flaticon-care font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h5 class="text-truncate m-0">Special Care</h5>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <h1 class="flaticon-dog font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h5 class="text-truncate m-0">Customer Support</h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing section -->
+    <div class="container-fluid bg-light pt-5 pb-4">
+      <div class="container py-5">
+
+        <div class="row mb-2 section-heading">
+          <div class="col-12 text-center">
+            <h1>Our Projects</h1>
+            <p>We love to click lively pictures around the world</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card border-0">
+              <div class="card-header position-relative border-0 p-0 mb-4">
+                <img class="card-img-top" src="./images/6.jpg" alt="">
+
+                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100"
+                  style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
+                  <h3 class="text-primary mb-3">Basic</h3>
+                  <h1 class="display-4 text-white mb-0">
+                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>49<small
+                      class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mo</small>
+                  </h1>
                 </div>
               </div>
+
+              <div class="card-body text-center p-0">
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Feeding</li>
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Boarding</li>
+                  <li class="list-group-item p-2"><i class="fa fa-times text-danger mr-2"></i>Spa & Grooming</li>
+                  <li class="list-group-item p-2"><i class="fa fa-times text-danger mr-2"></i>Veterinary Medicine</li>
+                </ul>
+              </div>
+
+              <div class="card-footer border-0 p-0">
+                <a href="" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Signup Now</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card border-0">
+              <div class="card-header position-relative border-0 p-0 mb-4">
+                <img class="card-img-top" src="./images/8.jpg" alt="">
+
+                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100"
+                  style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
+                  <h3 class="text-secondary mb-3">Standard</h3>
+                  <h1 class="display-4 text-white mb-0">
+                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99<small
+                      class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mo</small>
+                  </h1>
+                </div>
+              </div>
+
+              <div class="card-body text-center p-0">
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Feeding</li>
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Boarding</li>
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Spa & Grooming</li>
+                  <li class="list-group-item p-2"><i class="fa fa-times text-danger mr-2"></i>Veterinary Medicine</li>
+                </ul>
+              </div>
+
+              <div class="card-footer border-0 p-0">
+                <a href="" class="btn btn-secondary btn-block p-3" style="border-radius: 0;">Signup Now</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card border-0">
+              <div class="card-header position-relative border-0 p-0 mb-4">
+                <img class="card-img-top" src="./images/9.jpg" alt="">
+
+                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100"
+                  style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
+                  <h3 class="text-primary mb-3">Premium</h3>
+                  <h1 class="display-4 text-white mb-0">
+                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149<small
+                      class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mo</small>
+                  </h1>
+                </div>
+              </div>
+
+              <div class="card-body text-center p-0">
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Feeding</li>
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Boarding</li>
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Spa & Grooming</li>
+                  <li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Veterinary Medicine
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-footer border-0 p-0">
+                <a href="" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Signup Now</a>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Team section -->
+    <div class="container mt-5 pt-5 pb-3">
+
+      <div class="row mb-2 section-heading">
+        <div class="col-12 text-center">
+          <h1>Our Projects</h1>
+          <p>We love to click lively pictures around the world</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team card position-relative overflow-hidden border-0 mb-4">
+            <img class="card-img-top" src="./images/5.jpg" alt="">
+            <div class="card-body text-center p-0">
+
+              <div class="team-text d-flex flex-column justify-content-center bg-light">
+                <h5>Mollie Ross</h5>
+                <i>Founder & CEO</i>
+              </div>
+
+              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
+                  href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="team card position-relative overflow-hidden border-0 mb-4">
+            <img class="card-img-top" src="./images/4.jpg" alt="">
+            <div class="card-body text-center p-0">
+
+              <div class="team-text d-flex flex-column justify-content-center bg-light">
+                <h5>Jennifer Page</h5>
+                <i>Chef Executive</i>
+              </div>
+
+              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
+                  href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="team card position-relative overflow-hidden border-0 mb-4">
+            <img class="card-img-top" src="./images/3.jpg" alt="">
+            <div class="card-body text-center p-0">
+
+              <div class="team-text d-flex flex-column justify-content-center bg-light">
+                <h5>Kate Glover</h5>
+                <i>Doctor</i>
+              </div>
+
+              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
+                  href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="team card position-relative overflow-hidden border-0 mb-4">
+            <img class="card-img-top" src="./images/2.jpg" alt="">
+
+            <div class="card-body text-center p-0">
+              <div class="team-text d-flex flex-column justify-content-center bg-light">
+                <h5>Lilly Fry</h5>
+                <i>Trainer</i>
+              </div>
+
+              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
+                  href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download section -->
     <section class="section-3 container-fluid p-0 text-center">
+
       <div class="row">
         <div class="col-md-12 col-sm-12">
           <h1>Download Our App for all Platform</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod possimus odit
-            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto unde
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod
+            possimus odit
+            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto
+            unde
             eaque nostrum nobis voluptatum
           </p>
         </div>
       </div>
+
       <div class="platform row">
         <div class="col-md-6 col-sm-12 text-right">
           <div class="desktop shadow-lg">
@@ -209,6 +693,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-6 col-sm-12 text-left">
           <div class="desktop shadow-lg">
             <div class="d-flex flex-row justify-content-center">
@@ -220,135 +705,175 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Section 4 -->
-    <section class="section-4">
-      <div class="container text-center">
-        <h1 class="text-dark">What our Reader's Say about us</h1>
-        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="team row ">
-        <div class="col-md-4 col-12 text-center">
-            <div class="card mr-2 d-inline-block shadow-lg">
-                <div class="card-img-top">
-                  <img src="images/UI-face-3.jpg" class="img-fluid border-radius p-4" alt="">
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Blalock Jolene</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
-                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
-                  </p>
-                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-                  <p class="text-black-50">CEO at Google</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4 col-12">
-            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-                <div class="carousel-inner text-center">
-                  <div class="carousel-item active">
-                    <div class="card mr-2 d-inline-block shadow">
-                      <div class="card-img-top">
-                        <img src="images/UI-face-1.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
-                      </div>
-                      <div class="card-body">
-                        <h3 class="card-title">Allen Agnes</h3>
-                        <p class="card-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
-                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
-                        </p>
-                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-                        <p class="text-black-50">CEO at Google</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card  d-inline-block mr-2 shadow">
-                      <div class="card-img-top">
-                        <img src="images/UI-face-2.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
-                      </div>
-                      <div class="card-body">
-                        <h3 class="card-title">Amiel Barbara</h3>
-                        <p class="card-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
-                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
-                        </p>
-                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-                        <p class="text-black-50">CEO at Google</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-        </div>
-        </div>
-        <div class="col-md-4 col-12 text-center">
-            <div class="card mr-2 d-inline-block shadow-lg">
-                <div class="card-img-top">
-                  <img src="images/UI-face-4.jpg" class="img-fluid border-radius p-4" alt="">
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Olivia Louis</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
-                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
-                  </p>
-                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
-                  <p class="text-black-50">CEO at Google</p>
-                </div>
-              </div>
+    <!-- Blog section -->
+    <div class="container pt-5">
+
+      <div class="row mb-2 section-heading">
+        <div class="col-12 text-center">
+          <h1>Our Projects</h1>
+          <p>We love to click lively pictures around the world</p>
         </div>
       </div>
-    </section>
+
+      <div class="row pb-3">
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 mb-2">
+            <img class="card-img-top" src="./images/1.jpg" alt="">
+
+            <div class="card-body bg-light p-4">
+              <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+
+              <div class="d-flex mb-3">
+                <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
+                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+              </div>
+
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
+                stet justo</p>
+              <a class="font-weight-bold" href="">Read More</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 mb-2">
+            <img class="card-img-top" src="./images/10.jpg" alt="">
+
+            <div class="card-body bg-light p-4">
+              <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+              <div class="d-flex mb-3">
+                <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
+                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+              </div>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
+                stet justo</p>
+              <a class="font-weight-bold" href="">Read More</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 mb-2">
+            <img class="card-img-top" src="./images/11.jpg" alt="">
+            <div class="card-body bg-light p-4">
+              <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+              <div class="d-flex mb-3">
+                <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
+                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+              </div>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
+                stet justo</p>
+              <a class="font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
-    <div class="container-fluid p-0">
-      <div class="row text-left">
-        <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">About us</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
-          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made with by
-            <span> Daily Tuition</span>
-          </p>
-        </div>
-        <div class="col-md-5 col-sm-12">
-          <h4 class="text-light">Newsletter</h4>
-          <p class="text-muted">Stay Updated</p>
-          <form class="form-inline">
-            <div class="col pl-0">
-              <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
+
+  <footer class="container-fluid bg-grey py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="row">
+
+            <div class="col-md-6 ">
+              <div class="logo-part">
+                <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer">
+                <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                <p>Use this tool as test data for an automated system or find your next pen</p>
+                <a href="#" class="btn-footer"> More Info </a>
               </div>
             </div>
-          </form>
+
+            <div class="col-md-6 px-4">
+              <h6> About Company</h6>
+              <p>But horizontal lines can only be a full pixel high.</p>
+              <a href="#" class="btn-footer"> More Info </a><br>
+              <a href="#" class="btn-footer"> Contact Us</a>
+            </div>
+
+          </div>
         </div>
-        <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Follow Us</h4>
-          <p class="text-muted">Let us be social</p>
-          <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
+
+        <div class="col-md-6">
+          <div class="row">
+
+            <div class="col-md-6 px-4">
+              <h6> Help us</h6>
+              <div class="row ">
+
+                <div class="col-md-6">
+                  <ul>
+                    <li> <a href="#"> Home</a> </li>
+                    <li> <a href="#"> About</a> </li>
+                    <li> <a href="#"> Service</a> </li>
+                    <li> <a href="#"> Team</a> </li>
+                    <li> <a href="#"> Help</a> </li>
+                    <li> <a href="#"> Contact</a> </li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6 px-4">
+                  <ul>
+                    <li> <a href="#"> Cab Faciliy</a> </li>
+                    <li> <a href="#"> Fax</a> </li>
+                    <li> <a href="#"> Terms</a> </li>
+                    <li> <a href="#"> Policy</a> </li>
+                    <li> <a href="#"> Refunds</a> </li>
+                    <li> <a href="#"> Paypal</a> </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-6 ">
+              <h6> Newsletter</h6>
+
+              <form class="form-footer my-3">
+                <input type="text" placeholder="search here...." name="search">
+                <input type="button" value="Go">
+              </form>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut, obcaecati dignissimos dolor,
+                ipsum minima deleniti quae consequuntur impedit reprehenderit vitae eos totam saepe.</p>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+  <!-- Copyright -->
+  <div class="bg-light py-4">
+    <div class="container text-center">
+      <p class="text-muted mb-0 py-2 copyright-link">2020 © <a href="https://shahriarrhythm.com/">Shahriar
+          Rhythm.</a> All
+        rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap js -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <!-- JQuery cdn -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Popper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 </body>
 
 </html>
