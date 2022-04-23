@@ -213,6 +213,7 @@ i {
 .services i {
   font-size: 50px;
   margin-bottom: 20px;
+  color: rgb(177, 3, 3);
 }
 
 /* Fun facts section */
@@ -298,6 +299,7 @@ i {
 .why-us i {
   font-size: 24px;
   margin-right: 16px;
+  color: rgb(177, 3, 3);
 }
 
 /* Pricing section */
@@ -360,6 +362,7 @@ i {
 
 .contact i {
   margin-right: 10px;
+  color: rgb(177, 3, 3);
 }
 
 /* Footer */
