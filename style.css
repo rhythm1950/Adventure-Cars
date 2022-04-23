@@ -16,6 +16,14 @@ section {
   padding-bottom: 10px;
 }
 
+.section-heading h1 {
+  font-weight: bold;
+}
+
+i {
+  color: rgb(177, 3, 3);
+}
+
 .button,
 .button2 {
   display: inline-block;
@@ -170,23 +178,35 @@ section {
   padding-top: 5em;
 }
 
-.hero .container .col-content {
+.hero .container .content-col {
   font-family: 'Poppins', sans-serif;
 }
 
-.hero .container .col-content h6 {
+.hero .container .content-col h6 {
   padding: 1vmin;
   letter-spacing: 4px;
 }
 
-.hero .container .col-content h1 {
+.hero .container .content-col h1 {
   font-size: 8.5vmin;
   font-weight: bold;
   padding: 0.1em 0em;
 }
 
-.hero .container .col-content p {
-  padding: 1vmin 5vmin;
+.hero .container .content-col p {
+  margin-right: 50px;
+}
+
+.button:hover {
+  background-color: rgb(177, 3, 3) !important;
+}
+
+.button a {
+  color: white;
+}
+
+.button a:hover {
+  text-decoration: none;
 }
 
 /* Services section */
@@ -280,6 +300,11 @@ section {
   margin-right: 16px;
 }
 
+/* Pricing section */
+#pricing a:hover {
+  color: black !important;
+}
+
 /* CTA section */
 .cta {
   background: url(./images/road-3.jpg);
@@ -294,7 +319,7 @@ section {
 .cta .col-md-12>h1 {
   padding: 2em 0 0.5em 0;
   color: whitesmoke;
-  font-size: 6vmin;
+  font-size: 9vmin;
 }
 
 .cta .col-md-12>p {
@@ -302,6 +327,17 @@ section {
   padding-bottom: 1em;
   color: rgba(255, 255, 255, 0.877);
   font-size: 3vmin;
+  margin-top: -25px;
+}
+
+.button {
+  color: white;
+}
+
+#newsletter .button:hover {
+  text-decoration: none;
+  color: white !important;
+  background-color: rgb(177, 3, 3) !important;
 }
 
 /* Blog section */
@@ -317,12 +353,12 @@ section {
   text-decoration: none !important;
 }
 
-/* Booking section */
+/* Contact section */
 .form-div {
   background-color: black;
 }
 
-.booking i {
+.contact i {
   margin-right: 10px;
 }
 
