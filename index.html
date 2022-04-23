@@ -13,7 +13,9 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
   <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Adventure Cars</title>
 </head>
@@ -21,7 +23,7 @@
 <body>
   <!-- Topbar -->
   <div class="container-fluid">
-    <div class="row bg-secondary py-2 px-lg-5">
+    <div class="row py-2 px-lg-5 bg-black">
 
       <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
         <div class="d-inline-flex align-items-center">
@@ -57,7 +59,7 @@
     <div class="row py-3 px-lg-5">
       <div class="col-lg-4">
         <a href="" class="navbar-brand d-none d-lg-block">
-          <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Pet</span>Lover</h1>
+          <h1 class="m-0 display-5 text-capitalize brand-name">Pet Lover</h1>
         </a>
       </div>
 
@@ -84,161 +86,126 @@
     </div>
   </div>
 
-  <!-- Navbar -->
-  <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
-      <a href="" class="navbar-brand d-block d-lg-none">
-        <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First
-        </h1>
-      </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-        <div class="navbar-nav mr-auto py-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Service</a>
-          <a href="price.html" class="nav-item nav-link">Price</a>
-          <a href="booking.html" class="nav-item nav-link">Booking</a>
-
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-            <div class="dropdown-menu rounded-0 m-0">
-              <a href="blog.html" class="dropdown-item">Blog Grid</a>
-              <a href="single.html" class="dropdown-item">Blog Detail</a>
-            </div>
-          </div>
-
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+  <!-- Header -->
+  <header class="header fixed">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="nav-toggle">
+          <span></span>
         </div>
-        <a href="" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Our Projects</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
+  </header>
 
-    </nav>
-  </div>
-
-  <header>
-    <div class="container text-center">
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container text-left">
       <div class="row">
 
-        <div class="col-md-7 col-sm-12  text-white">
+        <div class="col-md-6 content-col col-sm-12  text-white">
           <h6>AUTHOR: DAILY TUITION</h6>
           <h1>EXCITING ADVENTURE</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi
             expedita.
           </p>
-          <button class="btn btn-light px-5 py-2 primary-btn">
+          <button class="btn px-5 py-2 button">
             By now for $5.99
           </button>
         </div>
 
-        <div class="col-md-5 col-sm-12  h-25">
-          <img src="images/header-img.png" alt="Book" />
+        <div class="col-md-6 img-col col-sm-12">
+          <img src="images/car-hero.png" alt="car" />
         </div>
 
       </div>
     </div>
-  </header>
+  </section>
 
   <main>
-    <!-- Booking section -->
-    <div class="container-fluid bg-light">
+    <!-- Services section -->
+    <div class="container-fluid bg-light pt-5 services">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="bg-primary py-5 px-4 px-sm-5">
-              <form class="py-5">
 
-                <div class="form-group">
-                  <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
-                </div>
+        <div class="row mb-2 section-heading">
+          <div class="col-12 text-center">
+            <h1>Our Services</h1>
+            <p>We love to click lively pictures around the world</p>
+          </div>
+        </div>
 
-                <div class="form-group">
-                  <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
-                </div>
-
-                <div class="form-group">
-                  <div class="date" id="date" data-target-input="nearest">
-                    <input type="text" class="form-control border-0 p-4 datetimepicker-input"
-                      placeholder="Reservation Date" data-target="#date" data-toggle="datetimepicker" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <div class="time" id="time" data-target-input="nearest">
-                    <input type="text" class="form-control border-0 p-4 datetimepicker-input"
-                      placeholder="Reservation Time" data-target="#time" data-toggle="datetimepicker" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <select class="custom-select border-0 px-4" style="height: 47px;">
-                    <option selected>Select A Service</option>
-                    <option value="1">Service 1</option>
-                    <option value="2">Service 1</option>
-                    <option value="3">Service 1</option>
-                  </select>
-                </div>
-                <div>
-
-                  <button class="btn btn-dark btn-block border-0 py-3" type="submit">Book Now</button>
-                </div>
-              </form>
-
+        <div class="row pb-3">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h2><i class="fa-brands fa-instagram"></i></h2>
+              <h3 class="mb-3">Pet Boarding</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
             </div>
           </div>
 
-          <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
-            <h4 class="text-secondary mb-3">Going for a vacation?</h4>
-            <h1 class="display-4 mb-4">Book For <span class="text-primary">Your Pet</span></h1>
-            <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
-
-            <div class="row py-2">
-              <div class="col-sm-6">
-                <div class="d-flex flex-column">
-                  <div class="d-flex align-items-center mb-2">
-                    <h1 class="flaticon-house font-weight-normal text-secondary m-0 mr-3"></h1>
-                    <h5 class="text-truncate m-0">Pet Boarding</h5>
-                  </div>
-                  <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="d-flex flex-column">
-                  <div class="d-flex align-items-center mb-2">
-                    <h1 class="flaticon-food font-weight-normal text-secondary m-0 mr-3"></h1>
-                    <h5 class="text-truncate m-0">Pet Feeding</h5>
-                  </div>
-                  <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="d-flex flex-column">
-                  <div class="d-flex align-items-center mb-2">
-                    <h1 class="flaticon-grooming font-weight-normal text-secondary m-0 mr-3"></h1>
-                    <h5 class="text-truncate m-0">Pet Grooming</h5>
-                  </div>
-                  <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="d-flex flex-column">
-                  <div class="d-flex align-items-center mb-2">
-                    <h1 class="flaticon-toy font-weight-normal text-secondary m-0 mr-3"></h1>
-                    <h5 class="text-truncate m-0">Pet Tranning</h5>
-                  </div>
-                  <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
-                </div>
-              </div>
-
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h2><i class="fa-brands fa-instagram"></i></h2>
+              <h3 class="mb-3">Pet Feeding</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
             </div>
           </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h2><i class="fa-brands fa-instagram"></i></h2>
+              <h3 class="mb-3">Pet Grooming</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h2><i class="fa-brands fa-instagram"></i></h2>
+              <h3 class="mb-3">Per Training</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h2><i class="fa-brands fa-instagram"></i></h2>
+              <h3 class="mb-3">Pet Exercise</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+              <h2><i class="fa-brands fa-instagram"></i></h2>
+              <h3 class="mb-3">Pet Treatment</h3>
+              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit
+                vero stet ipsum justo</p>
+              <a class="text-uppercase font-weight-bold" href="">Read More</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -249,8 +216,7 @@
 
         <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
           <h4 class="text-secondary mb-3">About Us</h4>
-          <h1 class="display-4 mb-4"><span class="text-primary">Boarding</span> & <span
-              class="text-secondary">Daycare</span></h1>
+          <h1 class="display-4 mb-4">Boarding & Daycare</h1>
           <h5 class="text-muted mb-3">Amet stet amet ut. Sit no vero vero no dolor. Sed erat ut sea. Just clita ut stet
             kasd at diam sit erat vero sit.</h5>
           <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore
@@ -259,23 +225,23 @@
 
           <ul class="list-inline">
             <li>
-              <h5><i class="fa fa-check-double text-secondary mr-3"></i>Best In Industry</h5>
+              <h5><i class="fa fa-check text-secondary mr-3"></i>Best In Industry</h5>
             </li>
             <li>
-              <h5><i class="fa fa-check-double text-secondary mr-3"></i>Emergency Services</h5>
+              <h5><i class="fa fa-check text-secondary mr-3"></i>Emergency Services</h5>
             </li>
             <li>
-              <h5><i class="fa fa-check-double text-secondary mr-3"></i>24/7 Customer Support</h5>
+              <h5><i class="fa fa-check text-secondary mr-3"></i>24/7 Customer Support</h5>
             </li>
           </ul>
 
-          <a href="" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+          <a href="" class="btn btn-lg button mt-3 px-4">Learn More</a>
         </div>
 
         <div class="col-lg-5">
           <div class="row px-3">
             <div class="col-12 p-0">
-              <img class="img-fluid w-100" src="./images/7.jpg" alt="">
+              <img class="img-fluid w-100" src="./images/car-1.png" alt="">
             </div>
           </div>
         </div>
@@ -318,93 +284,17 @@
       </div>
     </section>
 
-    <!-- Services section -->
-    <div class="container-fluid bg-light pt-5">
-      <div class="container py-5">
-
-        <div class="row mb-2 section-heading">
-          <div class="col-12 text-center">
-            <h1>Our Projects</h1>
-            <p>We love to click lively pictures around the world</p>
-          </div>
-        </div>
-
-        <div class="row pb-3">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
-              <h3 class="flaticon-house display-3 font-weight-normal text-secondary mb-3"></h3>
-              <h3 class="mb-3">Pet Boarding</h3>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
-                vero stet ipsum justo</p>
-              <a class="text-uppercase font-weight-bold" href="">Read More</a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
-              <h3 class="flaticon-food display-3 font-weight-normal text-secondary mb-3"></h3>
-              <h3 class="mb-3">Pet Feeding</h3>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
-                vero stet ipsum justo</p>
-              <a class="text-uppercase font-weight-bold" href="">Read More</a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
-              <h3 class="flaticon-grooming display-3 font-weight-normal text-secondary mb-3"></h3>
-              <h3 class="mb-3">Pet Grooming</h3>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
-                vero stet ipsum justo</p>
-              <a class="text-uppercase font-weight-bold" href="">Read More</a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
-              <h3 class="flaticon-cat display-3 font-weight-normal text-secondary mb-3"></h3>
-              <h3 class="mb-3">Per Training</h3>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
-                vero stet ipsum justo</p>
-              <a class="text-uppercase font-weight-bold" href="">Read More</a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
-              <h3 class="flaticon-dog display-3 font-weight-normal text-secondary mb-3"></h3>
-              <h3 class="mb-3">Pet Exercise</h3>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
-                vero stet ipsum justo</p>
-              <a class="text-uppercase font-weight-bold" href="">Read More</a>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
-              <h3 class="flaticon-vaccine display-3 font-weight-normal text-secondary mb-3"></h3>
-              <h3 class="mb-3">Pet Treatment</h3>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit
-                vero stet ipsum justo</p>
-              <a class="text-uppercase font-weight-bold" href="">Read More</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Features section -->
-    <div class="container">
+    <!-- Why Us section -->
+    <section class="container why-us">
       <div class="row align-items-center">
 
         <div class="col-lg-5">
-          <img class="img-fluid w-100" src="./images/5.jpg" alt="">
+          <img class="img-fluid w-100" src="./images/car-3.jpg" alt="">
         </div>
 
         <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
           <h4 class="text-secondary mb-3">Why Choose Us?</h4>
-          <h1 class="display-4 mb-4"><span class="text-primary">Special Care</span> On Pets</h1>
+          <h1 class="display-4 mb-4">Special Care On</h1>
           <p class="mb-4">Dolor lorem lorem ipsum sit et ipsum. Sadip sea amet diam sed ut vero no sit. Et elitr stet
             sed sit sed kasd. Erat duo eos et erat sed diam duo</p>
 
@@ -412,28 +302,28 @@
 
             <div class="col-6">
               <div class="d-flex align-items-center mb-4">
-                <h1 class="flaticon-cat font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h2><i class="fa fa-check"></i></h2>
                 <h5 class="text-truncate m-0">Best In Industry</h5>
               </div>
             </div>
 
             <div class="col-6">
               <div class="d-flex align-items-center mb-4">
-                <h1 class="flaticon-doctor font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h2><i class="fa fa-check"></i></h2>
                 <h5 class="text-truncate m-0">Emergency Services</h5>
               </div>
             </div>
 
             <div class="col-6">
               <div class="d-flex align-items-center">
-                <h1 class="flaticon-care font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h2><i class="fa fa-check"></i></h2>
                 <h5 class="text-truncate m-0">Special Care</h5>
               </div>
             </div>
 
             <div class="col-6">
               <div class="d-flex align-items-center">
-                <h1 class="flaticon-dog font-weight-normal text-secondary m-0 mr-3"></h1>
+                <h2><i class="fa fa-check"></i></h2>
                 <h5 class="text-truncate m-0">Customer Support</h5>
               </div>
             </div>
@@ -441,15 +331,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Pricing section -->
-    <div class="container-fluid bg-light pt-5 pb-4">
+    <div class="container-fluid bg-light">
       <div class="container py-5">
 
         <div class="row mb-2 section-heading">
           <div class="col-12 text-center">
-            <h1>Our Projects</h1>
+            <h1>Pricing Plans</h1>
             <p>We love to click lively pictures around the world</p>
           </div>
         </div>
@@ -458,11 +348,11 @@
           <div class="col-lg-4 mb-4">
             <div class="card border-0">
               <div class="card-header position-relative border-0 p-0 mb-4">
-                <img class="card-img-top" src="./images/6.jpg" alt="">
+                <img class="card-img-top" src="./images/road-1.jpg" alt="">
 
                 <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100"
                   style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
-                  <h3 class="text-primary mb-3">Basic</h3>
+                  <h3 class="mb-3">Basic</h3>
                   <h1 class="display-4 text-white mb-0">
                     <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>49<small
                       class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mo</small>
@@ -480,7 +370,7 @@
               </div>
 
               <div class="card-footer border-0 p-0">
-                <a href="" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Signup Now</a>
+                <a href="" class="btn button btn-block p-3" style="border-radius: 0;">Get it now!</a>
               </div>
 
             </div>
@@ -489,11 +379,11 @@
           <div class="col-lg-4 mb-4">
             <div class="card border-0">
               <div class="card-header position-relative border-0 p-0 mb-4">
-                <img class="card-img-top" src="./images/8.jpg" alt="">
+                <img class="card-img-top" src="./images/road-2.jpg" alt="">
 
                 <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100"
                   style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
-                  <h3 class="text-secondary mb-3">Standard</h3>
+                  <h3 class="mb-3">Standard</h3>
                   <h1 class="display-4 text-white mb-0">
                     <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99<small
                       class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mo</small>
@@ -511,7 +401,7 @@
               </div>
 
               <div class="card-footer border-0 p-0">
-                <a href="" class="btn btn-secondary btn-block p-3" style="border-radius: 0;">Signup Now</a>
+                <a href="" class="btn button btn-block p-3" style="border-radius: 0;">Get it now!</a>
               </div>
 
             </div>
@@ -520,11 +410,11 @@
           <div class="col-lg-4 mb-4">
             <div class="card border-0">
               <div class="card-header position-relative border-0 p-0 mb-4">
-                <img class="card-img-top" src="./images/9.jpg" alt="">
+                <img class="card-img-top" src="./images/road-3.jpg" alt="">
 
                 <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100"
                   style="top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, .5);">
-                  <h3 class="text-primary mb-3">Premium</h3>
+                  <h3 class="mb-3">Premium</h3>
                   <h1 class="display-4 text-white mb-0">
                     <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149<small
                       class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mo</small>
@@ -543,7 +433,7 @@
               </div>
 
               <div class="card-footer border-0 p-0">
-                <a href="" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Signup Now</a>
+                <a href="" class="btn button btn-block p-3" style="border-radius: 0;">Get it now!</a>
               </div>
 
             </div>
@@ -552,121 +442,8 @@
       </div>
     </div>
 
-    <!-- Team section -->
-    <div class="container mt-5 pt-5 pb-3">
-
-      <div class="row mb-2 section-heading">
-        <div class="col-12 text-center">
-          <h1>Our Projects</h1>
-          <p>We love to click lively pictures around the world</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team card position-relative overflow-hidden border-0 mb-4">
-            <img class="card-img-top" src="./images/5.jpg" alt="">
-            <div class="card-body text-center p-0">
-
-              <div class="team-text d-flex flex-column justify-content-center bg-light">
-                <h5>Mollie Ross</h5>
-                <i>Founder & CEO</i>
-              </div>
-
-              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
-                  href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="team card position-relative overflow-hidden border-0 mb-4">
-            <img class="card-img-top" src="./images/4.jpg" alt="">
-            <div class="card-body text-center p-0">
-
-              <div class="team-text d-flex flex-column justify-content-center bg-light">
-                <h5>Jennifer Page</h5>
-                <i>Chef Executive</i>
-              </div>
-
-              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
-                  href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="team card position-relative overflow-hidden border-0 mb-4">
-            <img class="card-img-top" src="./images/3.jpg" alt="">
-            <div class="card-body text-center p-0">
-
-              <div class="team-text d-flex flex-column justify-content-center bg-light">
-                <h5>Kate Glover</h5>
-                <i>Doctor</i>
-              </div>
-
-              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
-                  href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="team card position-relative overflow-hidden border-0 mb-4">
-            <img class="card-img-top" src="./images/2.jpg" alt="">
-
-            <div class="card-body text-center p-0">
-              <div class="team-text d-flex flex-column justify-content-center bg-light">
-                <h5>Lilly Fry</h5>
-                <i>Trainer</i>
-              </div>
-
-              <div class="team-social d-flex align-items-center justify-content-center bg-dark">
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                  style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;"
-                  href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Download section -->
-    <section class="section-3 container-fluid p-0 text-center">
+    <!-- CTA section -->
+    <section class="cta container-fluid text-center">
 
       <div class="row">
         <div class="col-md-12 col-sm-12">
@@ -674,111 +451,192 @@
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod
             possimus odit
-            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto
+            voluptatum! Sunt ea quasi praesentium, tenetur iusto
             unde
             eaque nostrum nobis voluptatum
           </p>
         </div>
       </div>
 
-      <div class="platform row">
-        <div class="col-md-6 col-sm-12 text-right">
-          <div class="desktop shadow-lg">
-            <div class="d-flex flex-row justify-content-center">
-              <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
-              <div class="text text-left">
-                <h3 class="pt-1 m-0">Desktop</h3>
-                <p class="p-0 m-0">On website</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-sm-12 text-left">
-          <div class="desktop shadow-lg">
-            <div class="d-flex flex-row justify-content-center">
-              <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
-              <div class="text text-left">
-                <h3 class="pt-1 m-0">On Mobile</h3>
-                <p class="p-0 m-0">On Play Store</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <button class="btn px-5 py-2 button">
+        By now for $5.99
+      </button>
 
       </div>
     </section>
 
     <!-- Blog section -->
-    <div class="container pt-5">
+    <section class="blog">
+      <div class="container pt-5">
 
-      <div class="row mb-2 section-heading">
-        <div class="col-12 text-center">
-          <h1>Our Projects</h1>
-          <p>We love to click lively pictures around the world</p>
+        <div class="row mb-2 section-heading">
+          <div class="col-12 text-center">
+            <h1>Latest Posts</h1>
+            <p>We love to click lively pictures around the world</p>
+          </div>
+        </div>
+
+        <div class="row pb-3">
+          <div class="col-lg-4 mb-4">
+            <div class="card border-0 mb-2">
+              <img class="card-img-top" src="./images/car-4.jpg" alt="">
+
+              <div class="card-body bg-light p-4">
+                <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+
+                <div class="d-flex mb-3">
+                  <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
+                  <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                  <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+                </div>
+
+                <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
+                  stet justo</p>
+                <a class="font-weight-bold" href="">Read More</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card border-0 mb-2">
+              <img class="card-img-top" src="./images/car-2.jpg" alt="">
+
+              <div class="card-body bg-light p-4">
+                <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+                <div class="d-flex mb-3">
+                  <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
+                  <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                  <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+                </div>
+                <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
+                  stet justo</p>
+                <a class="font-weight-bold" href="">Read More</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card border-0 mb-2">
+              <img class="card-img-top" src="./images/car-5.jpg" alt="">
+              <div class="card-body bg-light p-4">
+                <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+                <div class="d-flex mb-3">
+                  <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
+                  <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                  <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+                </div>
+                <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
+                  stet justo</p>
+                <a class="font-weight-bold" href="">Read More</a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="row pb-3">
-        <div class="col-lg-4 mb-4">
-          <div class="card border-0 mb-2">
-            <img class="card-img-top" src="./images/1.jpg" alt="">
+    <!-- Booking section -->
+    <div class="container-fluid bg-light booking">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class=" form-div py-5 px-4 px-sm-5">
+              <form class="py-5">
 
-            <div class="card-body bg-light p-4">
-              <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
+                <div class="form-group">
+                  <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                </div>
 
-              <div class="d-flex mb-3">
-                <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
-                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
-              </div>
+                <div class="form-group">
+                  <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                </div>
 
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
-                stet justo</p>
-              <a class="font-weight-bold" href="">Read More</a>
-            </div>
+                <div class="form-group">
+                  <div class="date" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control border-0 p-4 datetimepicker-input"
+                      placeholder="Reservation Date" data-target="#date" data-toggle="datetimepicker" />
+                  </div>
+                </div>
 
-          </div>
-        </div>
+                <div class="form-group">
+                  <div class="time" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control border-0 p-4 datetimepicker-input"
+                      placeholder="Reservation Time" data-target="#time" data-toggle="datetimepicker" />
+                  </div>
+                </div>
 
-        <div class="col-lg-4 mb-4">
-          <div class="card border-0 mb-2">
-            <img class="card-img-top" src="./images/10.jpg" alt="">
+                <div class="form-group">
+                  <select class="custom-select border-0 px-4" style="height: 47px;">
+                    <option selected>Select A Service</option>
+                    <option value="1">Service 1</option>
+                    <option value="2">Service 1</option>
+                    <option value="3">Service 1</option>
+                  </select>
+                </div>
+                <div>
 
-            <div class="card-body bg-light p-4">
-              <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
-              <div class="d-flex mb-3">
-                <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
-                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
-              </div>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
-                stet justo</p>
-              <a class="font-weight-bold" href="">Read More</a>
-            </div>
+                  <button class="btn button btn-block border-0 py-3" type="submit">Book Now</button>
+                </div>
+              </form>
 
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-          <div class="card border-0 mb-2">
-            <img class="card-img-top" src="./images/11.jpg" alt="">
-            <div class="card-body bg-light p-4">
-              <h4 class="card-title text-truncate">Diam amet eos at no eos</h4>
-              <div class="d-flex mb-3">
-                <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
-                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
-              </div>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero
-                stet justo</p>
-              <a class="font-weight-bold" href="">Read More</a>
             </div>
           </div>
 
+          <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+            <h4 class="text-secondary mb-3">Going for a vacation?</h4>
+            <h1 class="display-4 mb-4">Book For Your Pet</h1>
+            <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
+
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h2><i class="fa-brands fa-instagram"></i></h2>
+                    <h5 class="text-truncate m-0">Pet Boarding</h5>
+                  </div>
+                  <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h2><i class="fa-brands fa-instagram"></i></h2>
+                    <h5 class="text-truncate m-0">Pet Feeding</h5>
+                  </div>
+                  <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h2><i class="fa-brands fa-instagram"></i></h2>
+                    <h5 class="text-truncate m-0">Pet Grooming</h5>
+                  </div>
+                  <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mb-2">
+                    <h2><i class="fa-brands fa-instagram"></i></h2>
+                    <h5 class="text-truncate m-0">Pet Tranning</h5>
+                  </div>
+                  <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   </main>
 
   <footer class="container-fluid bg-grey py-5">
@@ -790,9 +648,9 @@
 
             <div class="col-md-6 ">
               <div class="logo-part">
-                <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer">
+                <h2>Adventure</h2>
                 <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
-                <p>Use this tool as test data for an automated system or find your next pen</p>
+                <p>+1 3452 23656</p>
                 <a href="#" class="btn-footer"> More Info </a>
               </div>
             </div>
@@ -800,7 +658,6 @@
             <div class="col-md-6 px-4">
               <h6> About Company</h6>
               <p>But horizontal lines can only be a full pixel high.</p>
-              <a href="#" class="btn-footer"> More Info </a><br>
               <a href="#" class="btn-footer"> Contact Us</a>
             </div>
 
@@ -820,8 +677,6 @@
                     <li> <a href="#"> About</a> </li>
                     <li> <a href="#"> Service</a> </li>
                     <li> <a href="#"> Team</a> </li>
-                    <li> <a href="#"> Help</a> </li>
-                    <li> <a href="#"> Contact</a> </li>
                   </ul>
                 </div>
 
@@ -831,8 +686,6 @@
                     <li> <a href="#"> Fax</a> </li>
                     <li> <a href="#"> Terms</a> </li>
                     <li> <a href="#"> Policy</a> </li>
-                    <li> <a href="#"> Refunds</a> </li>
-                    <li> <a href="#"> Paypal</a> </li>
                   </ul>
                 </div>
 
@@ -847,8 +700,8 @@
                 <input type="button" value="Go">
               </form>
 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut, obcaecati dignissimos dolor,
-                ipsum minima deleniti quae consequuntur impedit reprehenderit vitae eos totam saepe.</p>
+              <p>Lorem ipsum dolor sit amet consectetur
+              </p>
             </div>
 
           </div>
@@ -858,7 +711,7 @@
   </footer>
 
   <!-- Copyright -->
-  <div class="bg-light py-4">
+  <div class="py-4 copyright">
     <div class="container text-center">
       <p class="text-muted mb-0 py-2 copyright-link">2020 © <a href="https://shahriarrhythm.com/">Shahriar
           Rhythm.</a> All
